@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 10px;
+    font-size: 7px;
 }
 
 body {
@@ -31,6 +31,12 @@ p{
 img{
     width: 100%;
     height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 header{
@@ -85,8 +91,60 @@ header h1{
 
 #section-b li{
     margin-bottom: 1.5rem;
+    background-color: #eaeaea;
+    color: #333;
 }
 
 .col-content{
     padding: 1.5rem;
+}
+
+#section-c {
+    background-color: #eaeaea;
+    color: #333;
+
+}
+
+#section-d .box{
+    padding: 5rem;
+}
+
+#section-d .box:first-child{
+    background-color: darkslategray;
+}
+
+footer{
+    padding: 4rem;
+    background-color:rgba(0, 0, 0, 0.693);
+}
+
+footer a{
+    color: yellowgreen;
+}
+
+@media screen and (min-width:800px) {
+    
+    html{
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    
+    html{
+        font-size: 11px;
+    }
+
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box {
+        width: 50%;
+        float: left;
+    }
+
 }
